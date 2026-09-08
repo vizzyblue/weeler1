@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WHEELR — The Meme-Cap Experiment</title>
+<title>WHEELER — The Meme-Cap Experiment</title>
 <style>
 :root{--bg:#08090b;--panel:#101216;--panel2:#15171c;--text:#f4f5f7;--muted:#969ba7;--line:#282b32;--accent:#c8ff35;--danger:#ff5d6c;--max:1180px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% -10%,#20251a 0,transparent 35%),var(--bg);color:var(--text);font:15px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -31,7 +31,7 @@ footer{padding:50px 0;color:var(--muted);border-top:1px solid var(--line)}footer
 <body>
 <nav>
   <div class="wrap" style="display:flex;width:100%;justify-content:space-between;align-items:center">
-    <a class="logo" href="#">WHEEL<span>R</span></a>
+    <a class="logo" href="#">WHEELER<span></span></a>
     <div class="navlinks">
       <a href="#flip">The Flip</a>
       <a href="#treasury">Treasury</a>
@@ -49,21 +49,21 @@ footer{padding:50px 0;color:var(--muted);border-top:1px solid var(--line)}footer
 <section class="hero" style="border-top:0">
 <div class="eyebrow">Independent meme-cap experiment</div>
 <h1>Can a meme coin flip a Nasdaq company?</h1>
-<p>WHEELR is a prototype for an independently operated meme-token project built around radical treasury transparency and one ridiculous public scoreboard.</p>
+<p>WHEELER is a prototype for an independently operated meme-token project built around radical treasury transparency and one ridiculous public scoreboard.</p>
 <div class="actions"><a class="btn primary" href="#flip">Watch the Flip</a><a class="btn" href="#transparency">See the Rules</a></div>
 <div class="cards">
-<div class="card"><div class="label">WHEELR market cap</div><div class="big" id="heroTokenMcap">$42,000</div></div>
-<div class="card"><div class="label">WHLR market cap</div><div class="big" id="heroWhlrMcap">$12,500,000</div></div>
-<div class="card"><div class="label">Flip ratio</div><div class="big green" id="heroFlipRatio">0.0034×</div></div>
+<div class="card"><div class="label">WHEELER market cap</div><div class="big" id="heroTokenMcap">$42,000</div></div>
+<div class="card"><div class="label">WHLR market cap</div><div class="big" id="heroWhlrMcap">$311,000</div></div>
+<div class="card"><div class="label">Flip ratio</div><div class="big green" id="heroFlipRatio">0.1350×</div></div>
 </div>
 </section>
 
 <section id="flip">
-<div class="sectionhead"><div><h2>The Scoreboard</h2></div><p>The live ratio compares WHEELR's market capitalization with WHLR common-stock market capitalization fetched via Dexscreener.</p></div>
+<div class="sectionhead"><div><h2>The Scoreboard</h2></div><p>The live ratio compares WHEELER's market capitalization with WHLR common-stock market capitalization fetched via Dexscreener.</p></div>
 <div class="flip">
-<div class="asset"><div class="label">WHEELR</div><h3>Meme market cap</h3><div class="price" id="flipTokenMcap">$42,000</div><div class="bar"><i id="tokenBar" style="width:0.34%"></i></div></div>
-<div class="ratio"><div class="num" id="flipRatioNum">0.0034×</div><small>distance to 1.00×</small></div>
-<div class="asset"><div class="label">WHLR</div><h3>Public-company market cap</h3><div class="price" id="flipWhlrMcap">$12.5M</div><div class="bar"><i style="width:100%"></i></div></div>
+<div class="asset"><div class="label">WHEELER</div><h3>Meme market cap</h3><div class="price" id="flipTokenMcap">$42,000</div><div class="bar"><i id="tokenBar" style="width:13.5%"></i></div></div>
+<div class="ratio"><div class="num" id="flipRatioNum">0.1350×</div><small>distance to 1.00×</small></div>
+<div class="asset"><div class="label">WHLR</div><h3>Public-company market cap</h3><div class="price" id="flipWhlrMcap">$311,000</div><div class="bar"><i style="width:100%"></i></div></div>
 </div>
 <div class="notice" style="margin-top:18px"><b>Live Status:</b> <span id="apiStatus">Connecting to Dexscreener API...</span></div>
 </section>
@@ -72,8 +72,8 @@ footer{padding:50px 0;color:var(--muted);border-top:1px solid var(--line)}footer
 <div class="sectionhead"><div><h2>Treasury & Open Books</h2></div><p>Project-controlled liquidity and equivalent asset valuations reconciled transparently.</p></div>
 <div class="grid4">
 <div class="metric"><div class="label">Crypto treasury</div><strong id="treasuryCrypto">$8,400</strong></div>
-<div class="metric"><div class="label">WHLR shares</div><strong id="treasuryShares">3,360</strong></div>
-<div class="metric"><div class="label">WHLR value</div><strong id="treasuryWhlrVal">$8,400</strong></div>
+<div class="metric"><div class="label">WHLR shares</div><strong id="treasuryShares">0</strong></div>
+<div class="metric"><div class="label">WHLR value</div><strong id="treasuryWhlrVal">$0</strong></div>
 <div class="metric"><div class="label">Multisig</div><strong>3 / 5</strong></div>
 </div>
 </section>
@@ -98,7 +98,7 @@ footer{padding:50px 0;color:var(--muted);border-top:1px solid var(--line)}footer
 <div class="rules">
 <div class="rule"><b>01</b>Fixed 1B maximum supply.</div><div class="rule"><b>02</b>No undisclosed project wallets.</div>
 <div class="rule"><b>03</b>Treasury controlled by multisig.</div><div class="rule"><b>04</b>Treasury transactions publicly reported.</div>
-<div class="rule"><b>05</b>WHLR holdings separately disclosed.</div><div class="rule"><b>06</b>WHEELR does not represent WHLR ownership.</div>
+<div class="rule"><b>05</b>WHLR holdings separately disclosed.</div><div class="rule"><b>06</b>WHEELER does not represent WHLR ownership.</div>
 </div>
 </section>
 
@@ -115,8 +115,8 @@ footer{padding:50px 0;color:var(--muted);border-top:1px solid var(--line)}footer
 
 <footer>
   <div class="wrap foot">
-    <div><b>WHEELR</b><br>Independent prototype — not affiliated with WHLR.<br><a href="https://x.com/thewheelercto?s=11" target="_blank" style="color: var(--accent); margin-top: 5px; display: inline-block;">Official X (Twitter) Profile</a></div>
-    <div>© 2026 WHEELR Prototype</div>
+    <div><b>WHEELER</b><br>Independent prototype — not affiliated with WHLR.<br><a href="https://x.com/thewheelercto?s=11" target="_blank" style="color: var(--accent); margin-top: 5px; display: inline-block;">Official X (Twitter) Profile</a></div>
+    <div>© 2026 WHEELER Prototype</div>
   </div>
 </footer>
 
@@ -141,13 +141,11 @@ async function fetchDexData() {
     let liquidityUSD = 0;
 
     if (data && data.pairs && data.pairs.length > 0) {
-      // Sort or pick pair with highest liquidity
       const pair = data.pairs[0];
       marketCap = pair.marketCap || pair.fdv || 0;
       liquidityUSD = pair.liquidity && pair.liquidity.usd ? pair.liquidity.usd : 0;
     }
 
-    // Dynamic live baseline if API data is still propagating
     if (!marketCap || marketCap === 0) {
       marketCap = 42000; 
       liquidityUSD = 8400;
@@ -164,22 +162,20 @@ async function fetchDexData() {
     document.getElementById('flipTokenMcap').innerText = formattedMcap;
     document.getElementById('treasuryCrypto').innerText = formattedLiquidity;
 
-    // WHLR Market Cap and Stock Value assumptions
-    const whlrMcapVal = 12500000; 
-    const whlrSharePrice = 2.50;
+    // WHLR Stock Market Cap is set to 311k ($311,000)
+    const whlrMcapVal = 311000; 
 
-    document.getElementById('heroWhlrMcap').innerText = "$" + (whlrMcapVal / 1000000).toFixed(1) + "M";
-    document.getElementById('flipWhlrMcap').innerText = "$" + (whlrMcapVal / 1000000).toFixed(1) + "M";
+    document.getElementById('heroWhlrMcap').innerText = "$" + Number(whlrMcapVal).toLocaleString();
+    document.getElementById('flipWhlrMcap').innerText = "$" + Number(whlrMcapVal).toLocaleString();
 
     // Flip Ratio calculation
     const flipRatio = whlrMcapVal > 0 ? (marketCap / whlrMcapVal).toFixed(4) : "0.00";
     document.getElementById('heroFlipRatio').innerText = flipRatio + "×";
     document.getElementById('flipRatioNum').innerText = flipRatio + "×";
 
-    // Open books calculation (Treasury values based on pool liquidity)
-    const equivalentShares = whlrSharePrice > 0 ? Math.floor(liquidityUSD / whlrSharePrice) : 0;
-    document.getElementById('treasuryShares').innerText = equivalentShares.toLocaleString();
-    document.getElementById('treasuryWhlrVal').innerText = "$" + (equivalentShares * whlrSharePrice).toLocaleString(undefined, {maximumFractionDigits: 2});
+    // WHLR shares and value strictly at 0 as requested
+    document.getElementById('treasuryShares').innerText = "0";
+    document.getElementById('treasuryWhlrVal').innerText = "$0";
     
     // Scale bar representation
     const barPercentage = Math.min(100, Math.max(0.5, (marketCap / whlrMcapVal) * 100));
